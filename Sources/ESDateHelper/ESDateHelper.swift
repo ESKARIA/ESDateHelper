@@ -124,7 +124,7 @@ public extension Date {
             return self.toString(dateStyle: .full, timeStyle: .full, isRelative: false)
         case .ordinalDay:
             let formatter = Date.cachedOrdinalNumberFormatter
-            if #available(iOSApplicationExtension 9.0, *) || #available(OSX 10.11, *) {
+            if #available(iOSApplicationExtension 9.0, *) {
                 formatter.numberStyle = .ordinal
             }
             return formatter.string(from: component(.day)! as NSNumber)!
