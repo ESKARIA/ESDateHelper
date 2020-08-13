@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "ESDateHelper",
-    platforms: [.iOS(.v13), .macOS(.v10_11)],
+    platforms: [.iOS(.v11), .macOS(.v10_12)],
     products: [
         .library(name: "ESDateHelper", targets: ["ESDateHelper"]),
     ],

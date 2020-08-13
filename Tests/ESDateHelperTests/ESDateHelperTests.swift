@@ -17,7 +17,7 @@ final class ESDateHelperTests: XCTestCase {
             XCTFail("dateToString cant be nil")
             return
         }
-        XCTAssert(dateString == stringDate, "somthin goes wrong")
+        XCTAssert(dateString == stringDate, "somthing goes wrong")
     }
     
     func testAdjustDay() {
@@ -28,8 +28,8 @@ final class ESDateHelperTests: XCTestCase {
         XCTAssertNotNil(date, "date string is nil")
         XCTAssertNotNil(adjustDayDate, "date string is nil")
         XCTAssertNotNil(dateToString, "date string is nil")
-        XCTAssert(date!.isBeforeDate(adjustDayDate!), "somthin goes wrong")
-        XCTAssert(dateToString! == "2020-06-13T02:42+0300", "somthin goes wrong")
+        XCTAssert(date!.isBeforeDate(adjustDayDate!), "somthing goes wrong")
+        XCTAssert(dateToString! == "2020-06-13T02:42+0300", "somthing goes wrong")
         
     }
 }
