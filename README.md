@@ -4,3 +4,25 @@
 
 
 Some helper functions for dates working on
+
+## Install
+
+### Swift Package Manager
+```swift
+
+    .package(url: "https://github.com/eskaria/ESDateHelper.git", from: "1.1.0")
+    
+```
+
+### Cocoapods
+
+```ruby
+
+    pod 'ESKDateHelper'
+    
+```
+### Manualy
+
+Simply import the framework and add the following code to get started.
+
+

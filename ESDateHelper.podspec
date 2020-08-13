@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
     s.platforms = { :ios => "11.0", :osx => "10.12", :watchos => "5.0", :tvos => "11.0" }
-    s.name = "ESDateHelper"
+    s.name = "ESKDateHelper"
     s.summary = "ESDateHelper swift 5.2 Date extension framework for simple development amazing apps."
     s.requires_arc = true
-    s.version = "2.0.0"
+    s.version = "1.1.0"
     s.license = { :type => "MIT", :file => "LICENSE" }
     s.author = { "Emil Karimov" => "emvakar@gmail.com" }
     s.homepage = "https://github.com/ESKARIA"
