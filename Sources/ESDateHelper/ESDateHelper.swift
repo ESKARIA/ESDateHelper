@@ -129,23 +129,23 @@ public extension Date {
             }
             return formatter.string(from: component(.day)! as NSNumber)!
         case .weekday:
-            let weekdaySymbols = Date.cachedFormatter().weekdaySymbols!
+            let weekdaySymbols = Date.cachedFormatter().weekdaySymbols ?? [""]
             let string = weekdaySymbols[component(.weekday)! - 1] as String
             return string
         case .shortWeekday:
-            let shortWeekdaySymbols = Date.cachedFormatter().shortWeekdaySymbols!
+            let shortWeekdaySymbols = Date.cachedFormatter().shortWeekdaySymbols ?? [""]
             return shortWeekdaySymbols[component(.weekday)! - 1] as String
         case .veryShortWeekday:
-            let veryShortWeekdaySymbols = Date.cachedFormatter().veryShortWeekdaySymbols!
+            let veryShortWeekdaySymbols = Date.cachedFormatter().veryShortWeekdaySymbols ?? [""]
             return veryShortWeekdaySymbols[component(.weekday)! - 1] as String
         case .month:
-            let monthSymbols = Date.cachedFormatter().monthSymbols!
+            let monthSymbols = Date.cachedFormatter().monthSymbols ?? [""]
             return monthSymbols[component(.month)! - 1] as String
         case .shortMonth:
-            let shortMonthSymbols = Date.cachedFormatter().shortMonthSymbols!
+            let shortMonthSymbols = Date.cachedFormatter().shortMonthSymbols ?? [""]
             return shortMonthSymbols[component(.month)! - 1] as String
         case .veryShortMonth:
-            let veryShortMonthSymbols = Date.cachedFormatter().veryShortMonthSymbols!
+            let veryShortMonthSymbols = Date.cachedFormatter().veryShortMonthSymbols ?? [""]
             return veryShortMonthSymbols[component(.month)! - 1] as String
         }
     }
